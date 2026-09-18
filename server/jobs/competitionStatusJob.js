@@ -1,7 +1,7 @@
 import cron        from 'node-cron'
 import Competition  from '../models/Competition.js'
 
-async function refreshStatuses() {
+export async function refreshStatuses() {
   const comps = await Competition.find({ manualStatus: false })
   for (const c of comps) {
     const computed = c.computeStatus()

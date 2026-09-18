@@ -91,3 +91,7 @@ server/scripts/seedTestUsers.js
 server/scripts/cleanupOrphans.js
 server/scripts/removeGalleryTitles.js
 server/scripts/backfillCacheControl.js
+
+# Any misnamed env copies
+*.env
+!.env.example
