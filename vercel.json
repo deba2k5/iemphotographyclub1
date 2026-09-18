@@ -6,7 +6,7 @@
   },
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api" },
-    { "source": "/((?!assets/|.*\..*).*)", "destination": "/index.html" }
+    { "source": "/((?!assets/|.*\\..*).*)", "destination": "/index.html" }
   ],
   "crons": [
     { "path": "/api/cron/daily", "schedule": "5 0 * * *" }
